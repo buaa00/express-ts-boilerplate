@@ -1,0 +1,38 @@
+{
+    "name": "express-ts-boilerplate",
+    "version": "0.0.1",
+    "description": "Small boilerplate for express apps",
+    "main": "app.js",
+    "scripts": {
+        "compile": "tsc",
+        "serve": "node dist/app.js",
+        "watch": "nodemon -e js,html,ts,css --watch src src/app.ts",
+        "up": "tsc && node dist/app.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/buaa00/express-ts-boilerplate.git"
+    },
+    "author": "Buaa",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/buaa00/express-ts-boilerplate/issues"
+    },
+    "homepage": "https://github.com/buaa00/express-ts-boilerplate#readme",
+    "devDependencies": {
+        "@types/express": "^4.17.13",
+        "@types/morgan": "^1.9.3",
+        "@types/nunjucks": "^3.1.5",
+        "eslint": "^7.32.0",
+        "nodemon": "^2.0.12",
+        "ts-node": "^10.2.0",
+        "typescript": "^4.3.5"
+    },
+    "dependencies": {
+        "dotenv": "^10.0.0",
+        "express": "^4.17.1",
+        "morgan": "^1.10.0",
+        "nunjucks": "^3.2.3",
+        "rotating-file-stream": "^2.1.5"
+    }
+}
